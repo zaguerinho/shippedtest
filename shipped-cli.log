@@ -1,0 +1,261 @@
+TRACE 2016/08/31 20:58:29.931806 logfile.go:52: Now archiving log output to /Users/zaguerinho/workspace/shippedtest/shipped-cli.log
+TRACE 2016/08/31 20:58:29.932643 config.go:106: Created .shipped directory in /Users/zaguerinho
+TRACE 2016/08/31 20:58:29.932768 config.go:117: Created config file /Users/zaguerinho/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:29.933143 config.go:139: Using config file /Users/zaguerinho/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:29.933577 config.go:189: Set value apiToken=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj in /Users/zaguerinho/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:29.933606 main.go:185: CLI start directory is /Users/zaguerinho/workspace/shippedtest
+TRACE 2016/08/31 20:58:29.933631 config.go:134: Can't find config file /Users/zaguerinho/workspace/shippedtest/.shipped/shipped.ini (open /Users/zaguerinho/workspace/shippedtest/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/08/31 20:58:29.939052 utils.go:98: Console width is 150; help width is 120
+TRACE 2016/08/31 20:58:29.939817 client.go:114: GET https://api.ciscoshipped.io/users/current?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:30.546838 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 20:58:30.549023 memdb.go:88: MemDB shipped.db: Opened /var/lib/Cisco/shipped/shipped.db
+TRACE 2016/08/31 20:58:30.549047 shipdb.go:97: Opened database shipped.db on behalf of user zaguerinho on server https://api.ciscoshipped.io
+TRACE 2016/08/31 20:58:30.549056 schema.go:89: Defined schema for multi-row table shipped.db.buildpacks with columns name, buildpackID
+TRACE 2016/08/31 20:58:30.551206 memdb.go:281: MemDB shipped.db: Updated _schema.buildpacks=0x7b225461626c65...
+TRACE 2016/08/31 20:58:30.551607 schema.go:89: Defined schema for multi-row table shipped.db.environments with columns environmentID, name
+TRACE 2016/08/31 20:58:30.551638 memdb.go:281: MemDB shipped.db: Updated _schema.environments=0x7b225461626c65...
+TRACE 2016/08/31 20:58:30.551943 schema.go:89: Defined schema for multi-row table shipped.db.ports with columns portnum, projectID, serviceID
+TRACE 2016/08/31 20:58:30.551972 memdb.go:281: MemDB shipped.db: Updated _schema.ports=0x7b225461626c65...
+TRACE 2016/08/31 20:58:30.552266 schema.go:89: Defined schema for multi-row table shipped.db.projects with columns projectID, name, serviceRepoIDs, serviceImageIDs
+TRACE 2016/08/31 20:58:30.552304 memdb.go:281: MemDB shipped.db: Updated _schema.projects=0x7b225461626c65...
+TRACE 2016/08/31 20:58:30.552560 schema.go:89: Defined schema for multi-row table shipped.db.services with columns apiServer, portnum, projectID, serviceID, user, name
+TRACE 2016/08/31 20:58:30.552594 memdb.go:281: MemDB shipped.db: Updated _schema.services=0x7b225461626c65...
+TRACE 2016/08/31 20:58:30.553006 main.go:150: Shipped-cli 1.0 b0 20160801 175047 starting with args struct { ConfigFile string; ConsoleMode bool; Debug bool; Expanded bool; FastBootstrap bool; Force bool; Full bool; Help bool; Json bool; Latest bool; LocalDocker bool; Logs bool; Logfile string; MockSDKClient bool; NoHdr bool; OutputFields string; RunAsRootOK bool; ShippedHome string; ShowIDs bool; ShowVersion bool; Server string; Token string; VM string; Watch int; ObjType string; Command string; Arguments []string }{ConfigFile:"", ConsoleMode:false, Debug:false, Expanded:true, FastBootstrap:false, Force:false, Full:false, Help:false, Json:false, Latest:false, LocalDocker:false, Logs:false, Logfile:"/Users/zaguerinho/workspace/shippedtest/shipped-cli.log", MockSDKClient:false, NoHdr:false, OutputFields:"", RunAsRootOK:false, ShippedHome:"", ShowIDs:false, ShowVersion:false, Server:"https://api.ciscoshipped.io/", Token:"MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj", VM:"docker-compose", Watch:0, ObjType:"Local", Command:"bootstrap", Arguments:[]string{"27e68bf4-6ff6-11e6-805e-0242ac110008"}}
+TRACE 2016/08/31 20:58:30.553024 commands.go:93: Running command(Local) subcommand(bootstrap) args([]string{"27e68bf4-6ff6-11e6-805e-0242ac110008"}) help(false)
+TRACE 2016/08/31 20:58:30.553038 commands.go:162: objDesc.Name = "Local"
+TRACE 2016/08/31 20:58:30.553085 local.go:294: Starting LocalService.Bootstrap()
+TRACE 2016/08/31 20:58:30.554101 projects.go:273: Directory  contains a .shipped directory
+TRACE 2016/08/31 20:58:30.554144 projects.go:309: Changed to project directory /Users/zaguerinho/workspace
+TRACE 2016/08/31 20:58:30.554171 config.go:134: Can't find config file /Users/zaguerinho/workspace/.shipped/shipped.ini (open /Users/zaguerinho/workspace/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/08/31 20:58:30.554396 client.go:114: GET https://api.ciscoshipped.io/projects/27e68bf4-6ff6-11e6-805e-0242ac110008?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:30.918708 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 20:58:30.919273 client.go:114: GET https://api.ciscoshipped.io/projects/27e68bf4-6ff6-11e6-805e-0242ac110008/services?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:31.322097 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 20:58:31.322353 common.go:68: Project 27e68bf4-6ff6-11e6-805e-0242ac110008 (Testing) has 1 services
+TRACE 2016/08/31 20:58:31.322367 bootstrap.go:59: Starting bootstrap on server(https://api.ciscoshipped.io/) for project(27e68bf4-6ff6-11e6-805e-0242ac110008) with token(MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj)
+TRACE 2016/08/31 20:58:31.322374 memdb.go:84: MemDB shipped.db: Increased open count to 2
+TRACE 2016/08/31 20:58:31.322380 shipdb.go:91: Re-opened database shipped.db on behalf of user zaguerinho on server https://api.ciscoshipped.io
+TRACE 2016/08/31 20:58:31.322387 bootstrap.go:70: Obtaining platform-specific deployer...
+TRACE 2016/08/31 20:58:31.322441 command.go:23: Executing command: bash -c echo $EUID
+TRACE 2016/08/31 20:58:31.328437 deployer.go:93: Deploying bootstrap on darwin as zaguerinho
+TRACE 2016/08/31 20:58:31.329261 bootstrap.go:78: Starting pre-verification...
+TRACE 2016/08/31 20:58:31.329320 client.go:114: POST https://api.ciscoshipped.io/cli/27e68bf4-6ff6-11e6-805e-0242ac110008/status/project_init?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:31.815246 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 20:58:31.815396 common.go:31: Pre-Verification Start
+TRACE 2016/08/31 20:58:31.816497 common.go:37: Pre-Verification End
+TRACE 2016/08/31 20:58:31.816511 macdeployer.go:149: git Installation check
+TRACE 2016/08/31 20:58:31.816563 command.go:59: Executing command: git --version
+ERROR 2016/08/31 20:58:31.838367 macdeployer.go:161: Unable to find installed version of git; setting 999.99
+TRACE 2016/08/31 20:58:31.838398 macdeployer.go:149: git Installation check
+TRACE 2016/08/31 20:58:31.838415 deployer.go:254: Found version 2.7.4 in version string "git version 2.7.4 (Apple Git-66)" (match []string{"2.7.4", "2.7.4"})
+TRACE 2016/08/31 20:58:31.838449 command.go:59: Executing command: git --version
+TRACE 2016/08/31 20:58:31.848289 deployer.go:254: Found version 2.7.4 in version string "git version 2.7.4 (Apple Git-66)" (match []string{"2.7.4", "2.7.4"})
+2016/08/31 20:58:31.848375 deployer.go:119: git 2.7.4 is already installed.
+TRACE 2016/08/31 20:58:31.848467 command.go:23: Executing command: git config --global --list
+2016/08/31 20:58:31.910740 bootstrap.go:217: ============================================================
+2016/08/31 20:58:31.910769 bootstrap.go:218: Check prerequisite software
+2016/08/31 20:58:31.910782 bootstrap.go:219: ============================================================
+TRACE 2016/08/31 20:58:31.910790 macdeployer.go:149: docker Installation check
+TRACE 2016/08/31 20:58:31.910848 command.go:59: Executing command: docker --version
+TRACE 2016/08/31 20:58:32.027293 deployer.go:254: Found version 1.10.1 in version string "Docker version 1.10.1, build 9e83765" (match []string{"1.10.1", "1.10.1"})
+2016/08/31 20:58:32.028395 macdeployer.go:45: docker 1.10.1 is already installed.
+TRACE 2016/08/31 20:58:32.028414 macdeployer.go:149: docker-compose Installation check
+TRACE 2016/08/31 20:58:32.028475 command.go:59: Executing command: docker-compose --version
+TRACE 2016/08/31 20:58:32.330910 deployer.go:254: Found version 1.6.0 in version string "docker-compose version 1.6.0, build d99cad6" (match []string{"1.6.0", "1.6.0"})
+2016/08/31 20:58:32.349088 macdeployer.go:57: docker-compose 1.6.0 is installed
+TRACE 2016/08/31 20:58:32.349109 macdeployer.go:149: docker-machine Installation check
+TRACE 2016/08/31 20:58:32.349169 command.go:59: Executing command: docker-machine --version
+TRACE 2016/08/31 20:58:32.559810 deployer.go:254: Found version 0.6.0 in version string "docker-machine version 0.6.0, build e27fb87" (match []string{"0.6.0", "0.6.0"})
+2016/08/31 20:58:32.560875 macdeployer.go:57: docker-machine 0.6.0 is installed
+TRACE 2016/08/31 20:58:32.560892 macdeployer.go:149: virtualbox Installation check
+TRACE 2016/08/31 20:58:32.560989 command.go:59: Executing command: vboxmanage --version
+TRACE 2016/08/31 20:58:32.580289 deployer.go:254: Found version 5.0.14r105127 in version string "5.0.14r105127" (match []string{"5.0.14r105127", "5.0.14r105127"})
+2016/08/31 20:58:32.580693 macdeployer.go:57: virtualbox 5.0.14r105127 is installed
+TRACE 2016/08/31 20:58:32.580776 command.go:23: Executing command: docker-machine status shipped
+TRACE 2016/08/31 20:58:32.734465 compose.go:57: docker-machine shipped is running
+TRACE 2016/08/31 20:58:32.734573 command.go:23: Executing command: docker-machine status shipped
+TRACE 2016/08/31 20:58:32.874985 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 docker-machine-shipped,tcp,localhost,42376,,2376
+TRACE 2016/08/31 20:58:32.916422 compose.go:172: DOCKER_CERT_PATH = /Users/zaguerinho/.docker/machine/machines/shipped
+TRACE 2016/08/31 20:58:32.916454 compose.go:172: DOCKER_HOST = tcp://localhost:42376
+TRACE 2016/08/31 20:58:32.916463 compose.go:172: DOCKER_MACHINE_NAME = shipped
+TRACE 2016/08/31 20:58:32.916483 compose.go:172: DOCKER_TLS_VERIFY = 1
+TRACE 2016/08/31 20:58:32.916496 compose.go:102: Docker machine environment setup complete
+TRACE 2016/08/31 20:58:32.916534 command.go:23: Executing command: docker ps
+2016/08/31 20:58:32.963642 compose.go:121: Verifying docker installation
+TRACE 2016/08/31 20:58:32.963794 composetest.go:126: Created directory /tmp/composetest
+TRACE 2016/08/31 20:58:32.964354 composetest.go:136: Created file /tmp/composetest/docker-compose.yml
+TRACE 2016/08/31 20:58:32.964446 command.go:23: Executing command: docker-compose --file composetest/docker-compose.yml up -d
+TRACE 2016/08/31 20:58:33.396089 composetest.go:162: Creating composetest_hello-world_1
+TRACE 2016/08/31 20:58:33.396137 command.go:23: Executing command: docker logs composetest_hello-world_1
+TRACE 2016/08/31 20:58:33.436469 composetest.go:173: Hello from Docker!
+TRACE 2016/08/31 20:58:33.436505 composetest.go:173: This message shows that your installation appears to be working correctly.
+TRACE 2016/08/31 20:58:33.436516 composetest.go:173: To generate this message, Docker took the following steps:
+TRACE 2016/08/31 20:58:33.436521 composetest.go:173:  1. The Docker client contacted the Docker daemon.
+TRACE 2016/08/31 20:58:33.436526 composetest.go:173:  2. The Docker daemon pulled the "hello-world" image from the Docker Hub.
+TRACE 2016/08/31 20:58:33.436530 composetest.go:173:  3. The Docker daemon created a new container from that image which runs the
+TRACE 2016/08/31 20:58:33.436535 composetest.go:173:     executable that produces the output you are currently reading.
+TRACE 2016/08/31 20:58:33.436539 composetest.go:173:  4. The Docker daemon streamed that output to the Docker client, which sent it
+TRACE 2016/08/31 20:58:33.436543 composetest.go:173:     to your terminal.
+TRACE 2016/08/31 20:58:33.436548 composetest.go:173: To try something more ambitious, you can run an Ubuntu container with:
+TRACE 2016/08/31 20:58:33.436552 composetest.go:173:  $ docker run -it ubuntu bash
+TRACE 2016/08/31 20:58:33.436557 composetest.go:173: Share images, automate workflows, and more with a free Docker Hub account:
+TRACE 2016/08/31 20:58:33.436561 composetest.go:173:  https://hub.docker.com
+TRACE 2016/08/31 20:58:33.436569 composetest.go:173: For more examples and ideas, visit:
+TRACE 2016/08/31 20:58:33.436588 composetest.go:173:  https://docs.docker.com/engine/userguide/
+TRACE 2016/08/31 20:58:33.436598 composetest.go:208: Cleaning up composetest directory
+TRACE 2016/08/31 20:58:33.436637 command.go:23: Executing command: docker rm -f composetest_hello-world_1
+TRACE 2016/08/31 20:58:33.468032 composetest.go:221: Successfully removed composetest directory composetest
+TRACE 2016/08/31 20:58:33.468130 client.go:114: POST https://api.ciscoshipped.io/cli/27e68bf4-6ff6-11e6-805e-0242ac110008/status/install_docker?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:33.853082 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 20:58:33.853202 client.go:114: POST https://api.ciscoshipped.io/cli/27e68bf4-6ff6-11e6-805e-0242ac110008/status/install_vbox?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:34.178194 client.go:159: Request status code 200 (200 OK)
+2016/08/31 20:58:34.178309 bootstrap.go:217: ============================================================
+2016/08/31 20:58:34.178321 bootstrap.go:218: Cloning Repositories
+2016/08/31 20:58:34.178328 bootstrap.go:219: ============================================================
+TRACE 2016/08/31 20:58:34.178338 common.go:107: Cloning Repositories Start
+TRACE 2016/08/31 20:58:34.179384 config.go:106: Created .shipped directory in /Users/zaguerinho/workspace/Testing
+TRACE 2016/08/31 20:58:34.179543 config.go:117: Created config file /Users/zaguerinho/workspace/Testing/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:34.179619 config.go:139: Using config file /Users/zaguerinho/workspace/Testing/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:34.179665 config.go:158: Also using home config file /Users/zaguerinho/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:34.179843 config.go:189: Set value projectId=27e68bf4-6ff6-11e6-805e-0242ac110008 in /Users/zaguerinho/workspace/Testing/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:34.179988 config.go:189: Set value projectName=Testing in /Users/zaguerinho/workspace/Testing/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:34.180000 common.go:199: Created Testing/.shipped/shipped.ini with projectId=27e68bf4-6ff6-11e6-805e-0242ac110008 and projectName=Testing
+TRACE 2016/08/31 20:58:34.180028 config.go:134: Can't find config file /Users/zaguerinho/workspace/.shipped/shipped.ini (open /Users/zaguerinho/workspace/.shipped/shipped.ini: no such file or directory)
+2016/08/31 20:58:34.180057 common.go:162: Cloning service 1 shippedtest (486a92ac-6ff6-11e6-b350-0242ac110003) into /Users/zaguerinho/workspace/Testing/shippedtest
+TRACE 2016/08/31 20:58:34.180089 command.go:59: Executing command: git clone --progress https://github.com/zaguerinho/shippedtest Testing/shippedtest
+2016/08/31 20:58:34.190972 git.go:208: Cloning into 'Testing/shippedtest'...
+2016/08/31 20:58:34.882181 git.go:208: remote: Counting objects: 18, done.        
+2016/08/31 20:58:34.882727 git.go:208: remote: Compressing objects:  45% (5/11)           remote: Compressing objects:  54% (6/11)           remote: Compressing objects:  63% (7/11)           remote: Compressing objects:  72% (8/11)           remote: Compressing objects:  81% (9/11)           remote: Compressing objects:  90% (10/11)           remote: Compressing objects: 100% (11/11)           
+2016/08/31 20:58:34.961303 git.go:208: remote: Compressing objects: 100% (11/11), done.        
+2016/08/31 20:58:35.002024 git.go:208: remote: Total 18 (delta 2), reused 5 (delta 2), pack-reused 0        
+2016/08/31 20:58:35.017492 git.go:208: Checking connectivity... 
+2016/08/31 20:58:35.025355 git.go:208: done.
+TRACE 2016/08/31 20:58:35.034845 git.go:116: Found significant file Testing/shippedtest/.drone.sec
+TRACE 2016/08/31 20:58:35.035283 config.go:100: .shipped directory already exists
+TRACE 2016/08/31 20:58:35.035488 config.go:117: Created config file /Users/zaguerinho/workspace/Testing/shippedtest/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:35.035642 config.go:139: Using config file /Users/zaguerinho/workspace/Testing/shippedtest/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:35.035694 config.go:148: Also using project config file /Users/zaguerinho/workspace/Testing/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:35.035731 config.go:158: Also using home config file /Users/zaguerinho/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:35.035911 config.go:189: Set value serviceId=486a92ac-6ff6-11e6-b350-0242ac110003 in /Users/zaguerinho/workspace/Testing/shippedtest/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:35.036064 config.go:189: Set value serviceName=shippedtest in /Users/zaguerinho/workspace/Testing/shippedtest/.shipped/shipped.ini
+TRACE 2016/08/31 20:58:35.036072 common.go:199: Created Testing/shippedtest/.shipped/shipped.ini with serviceId=486a92ac-6ff6-11e6-b350-0242ac110003 and serviceName=shippedtest
+TRACE 2016/08/31 20:58:35.036145 common.go:211: Created Testing/shippedtest/.gitignore
+TRACE 2016/08/31 20:58:35.036178 command.go:59: Executing command: git add .gitignore
+TRACE 2016/08/31 20:58:35.048188 command.go:59: Executing command: git commit -m **Shipped -- Add .gitignore
+2016/08/31 20:58:35.059019 util.go:99: [master 3cc1230] **Shipped -- Add .gitignore
+2016/08/31 20:58:35.059042 util.go:99:  1 file changed, 1 insertion(+)
+2016/08/31 20:58:35.059050 util.go:99:  create mode 100644 .gitignore
+TRACE 2016/08/31 20:58:35.059267 config.go:134: Can't find config file /Users/zaguerinho/workspace/.shipped/shipped.ini (open /Users/zaguerinho/workspace/.shipped/shipped.ini: no such file or directory)
+TRACE 2016/08/31 20:58:35.059282 common.go:171: Git clone of Service shippedtest (486a92ac-6ff6-11e6-b350-0242ac110003) done!
+TRACE 2016/08/31 20:58:35.059347 memdb.go:283: MemDB shipped.db: Updated projects[27e68bf4-6ff6-11e6-805e-0242ac110008].serviceRepoIDs="486a92ac-6ff6-11e6-b350-0242ac110003"
+TRACE 2016/08/31 20:58:35.059357 memdb.go:283: MemDB shipped.db: Updated projects[27e68bf4-6ff6-11e6-805e-0242ac110008].projectID="27e68bf4-6ff6-11e6-805e-0242ac110008"
+TRACE 2016/08/31 20:58:35.059832 memdb.go:283: MemDB shipped.db: Updated projects[27e68bf4-6ff6-11e6-805e-0242ac110008].serviceImageIDs=""
+TRACE 2016/08/31 20:58:35.059845 memdb.go:283: MemDB shipped.db: Updated projects[27e68bf4-6ff6-11e6-805e-0242ac110008].projectID="27e68bf4-6ff6-11e6-805e-0242ac110008"
+TRACE 2016/08/31 20:58:35.060082 common.go:179: Cloning Repositories End
+2016/08/31 20:58:35.060108 bootstrap.go:217: ============================================================
+2016/08/31 20:58:35.060117 bootstrap.go:218: Download Configuration
+2016/08/31 20:58:35.060124 bootstrap.go:219: ============================================================
+TRACE 2016/08/31 20:58:35.060128 common.go:243: downloadScripts URL: https://api.ciscoshipped.io//cli/27e68bf4-6ff6-11e6-805e-0242ac110008
+TRACE 2016/08/31 20:58:35.060170 download.go:68: Starting download of https://api.ciscoshipped.io//cli/27e68bf4-6ff6-11e6-805e-0242ac110008/Vagrantfile?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj to Testing/.shipped/Vagrantfile
+TRACE 2016/08/31 20:58:35.486889 download.go:121: Download of Vagrantfile complete; -1 bytes downloaded.
+TRACE 2016/08/31 20:58:35.486960 download.go:68: Starting download of https://api.ciscoshipped.io//cli/27e68bf4-6ff6-11e6-805e-0242ac110008/docker-compose.yml?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj to Testing/.shipped/docker-compose-shipped.yml
+TRACE 2016/08/31 20:58:35.621652 download.go:121: Download of docker-compose-shipped.yml complete; -1 bytes downloaded.
+TRACE 2016/08/31 20:58:35.621923 common.go:399: Created Vagrantfile.LocalDocker
+2016/08/31 20:58:35.621986 common.go:284: Using localhost Docker for service container deployment
+TRACE 2016/08/31 20:58:35.622151 command.go:59: Executing command: git -C Testing/shippedtest reset .
+2016/08/31 20:58:35.630725 common.go:304: Verifed all configuration files for project
+TRACE 2016/08/31 20:58:35.630934 client.go:114: POST https://api.ciscoshipped.io/cli/27e68bf4-6ff6-11e6-805e-0242ac110008/status/download_cli?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:35.713787 client.go:159: Request status code 200 (200 OK)
+2016/08/31 20:58:35.713927 bootstrap.go:217: ============================================================
+2016/08/31 20:58:35.713955 bootstrap.go:218: Bootstrap Sandbox VM
+2016/08/31 20:58:35.713967 bootstrap.go:219: ============================================================
+2016/08/31 20:58:35.713972 bootstrap.go:174: Docker pull may take few moments
+TRACE 2016/08/31 20:58:35.714042 util.go:66: Changed directory to Testing/.shipped
+TRACE 2016/08/31 20:58:35.714071 client.go:114: GET https://api.ciscoshipped.io/projects/27e68bf4-6ff6-11e6-805e-0242ac110008/services?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 20:58:36.654991 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 20:58:36.656538 composeUp.go:126: Processing v2 docker-compose.yml
+TRACE 2016/08/31 20:58:36.656604 portmgr.go:44: AssignHostPort: vmPort(30080) service(shippedtest) containerPort(80)
+TRACE 2016/08/31 20:58:36.656878 command.go:23: Executing command: netstat -an
+TRACE 2016/08/31 20:58:36.664890 command.go:23: Executing command: docker ps --format {{.Ports}}
+TRACE 2016/08/31 20:58:36.696795 memdb.go:328: Memdb shipped.db: Started transaction
+TRACE 2016/08/31 20:58:36.696849 memdb.go:283: MemDB shipped.db: Updated ports[30080].projectID="27e68bf4-6ff6-11e6-805e-0242ac110008"
+TRACE 2016/08/31 20:58:36.696862 memdb.go:283: MemDB shipped.db: Updated ports[30080].serviceID="486a92ac-6ff6-11e6-b350-0242ac110003"
+TRACE 2016/08/31 20:58:36.696869 memdb.go:283: MemDB shipped.db: Updated ports[30080].portnum=30080
+TRACE 2016/08/31 20:58:36.696887 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].portnum=30080
+TRACE 2016/08/31 20:58:36.696897 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].projectID="27e68bf4-6ff6-11e6-805e-0242ac110008"
+TRACE 2016/08/31 20:58:36.696906 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].user="zaguerinho"
+TRACE 2016/08/31 20:58:36.696913 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].apiServer="https://api.ciscoshipped.io"
+TRACE 2016/08/31 20:58:36.696919 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].serviceID="486a92ac-6ff6-11e6-b350-0242ac110003"
+TRACE 2016/08/31 20:58:36.697431 memdb.go:352: Memdb shipped.db: Transaction committed
+TRACE 2016/08/31 20:58:36.697453 memdb.go:336: Memdb shipped.db: Rollback called with no active transaction
+TRACE 2016/08/31 20:58:36.697465 portmgr.go:86: VM port 30080 is available for service shippedtest (486a92ac-6ff6-11e6-b350-0242ac110003)
+TRACE 2016/08/31 20:58:36.697485 composeUp.go:155: Leaving service shippedtest exposed port unchanged at 30080
+TRACE 2016/08/31 20:58:36.697775 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 delete testing_shippedtest_1
+TRACE 2016/08/31 20:58:36.735410 command.go:23: Executing command: vboxmanage controlvm shipped natpf1 testing_shippedtest_1,tcp,localhost,30080,,30080
+2016/08/31 20:58:36.780924 composeUp.go:194: Assigned port localhost:30080 to service shippedtest
+TRACE 2016/08/31 20:58:36.780966 composeUp.go:56: Bringing up virtual machine testing
+TRACE 2016/08/31 20:58:36.781024 command.go:59: Executing command: docker-compose -f docker-compose-shipped.yml -p testing up -d
+2016/08/31 20:58:37.053214 util.go:99: Creating network "testing_default" with the default driver
+2016/08/31 20:58:37.162390 util.go:99: Building shippedtest
+2016/08/31 20:58:42.224771 util.go:99: Step 1 : FROM php:7-apache
+2016/08/31 20:58:44.079947 util.go:99: 7-apache: Pulling from library/php
+2016/08/31 21:01:26.181498 util.go:99: Digest: sha256:ddcb6ee48fa0e785c2aa52370b8987d4cfc3cfad58e522ebe0f1a20a9ab5900b
+2016/08/31 21:01:26.183298 util.go:99: Status: Downloaded newer image for php:7-apache
+2016/08/31 21:01:26.183775 util.go:99:  ---> 9e46384d20fe
+2016/08/31 21:01:26.183904 util.go:99: Step 2 : EXPOSE 80
+2016/08/31 21:01:26.197341 util.go:99:  ---> Running in 5c7fc0f5c7be
+2016/08/31 21:01:26.232871 util.go:99:  ---> c82ba6772bab
+2016/08/31 21:01:26.234913 util.go:99: Removing intermediate container 5c7fc0f5c7be
+2016/08/31 21:01:26.235171 util.go:99: Step 3 : WORKDIR /var/www/html
+2016/08/31 21:01:26.247903 util.go:99:  ---> Running in c2e77f3de178
+2016/08/31 21:01:26.290184 util.go:99:  ---> f73dd1b6769b
+2016/08/31 21:01:26.292904 util.go:99: Removing intermediate container c2e77f3de178
+2016/08/31 21:01:26.292990 util.go:99: Step 4 : COPY . /var/www/html
+2016/08/31 21:01:26.403337 util.go:99:  ---> 28bd20388f4e
+2016/08/31 21:01:26.407189 util.go:99: Removing intermediate container e3a72bbe78ca
+2016/08/31 21:01:26.407339 util.go:99: Step 5 : RUN chmod a+x .shipped/build  .shipped/test
+2016/08/31 21:01:26.420621 util.go:99:  ---> Running in 2160e9226379
+2016/08/31 21:01:26.591705 util.go:99:  ---> c7f52a2c918f
+2016/08/31 21:01:26.593968 util.go:99: Removing intermediate container 2160e9226379
+2016/08/31 21:01:26.594113 util.go:99: Step 6 : RUN .shipped/build
+2016/08/31 21:01:26.607711 util.go:99:  ---> Running in 8cf00d51e486
+2016/08/31 21:01:26.705920 util.go:99: No Build Steps
+2016/08/31 21:01:26.775769 util.go:99:  ---> 699a4ad739cb
+2016/08/31 21:01:26.779191 util.go:99: Removing intermediate container 8cf00d51e486
+2016/08/31 21:01:26.782097 util.go:99: Successfully built 699a4ad739cb
+2016/08/31 21:01:26.830609 util.go:99: Creating testing_shippedtest_1
+TRACE 2016/08/31 21:01:27.063546 client.go:114: POST https://api.ciscoshipped.io/cli/27e68bf4-6ff6-11e6-805e-0242ac110008/status/sandbox_vm_up?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 21:01:27.465482 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 21:01:27.465599 client.go:114: POST https://api.ciscoshipped.io/cli/27e68bf4-6ff6-11e6-805e-0242ac110008/status/down_buildpack?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 21:01:27.822201 client.go:159: Request status code 200 (200 OK)
+2016/08/31 21:01:27.822344 bootstrap.go:190: Project Testing bootstrap complete
+TRACE 2016/08/31 21:01:27.822384 client.go:114: GET https://api.ciscoshipped.io/projects/27e68bf4-6ff6-11e6-805e-0242ac110008?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 21:01:28.223032 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 21:01:28.223168 memdb.go:283: MemDB shipped.db: Updated projects[27e68bf4-6ff6-11e6-805e-0242ac110008].name="Testing"
+TRACE 2016/08/31 21:01:28.223179 memdb.go:283: MemDB shipped.db: Updated projects[27e68bf4-6ff6-11e6-805e-0242ac110008].projectID="27e68bf4-6ff6-11e6-805e-0242ac110008"
+TRACE 2016/08/31 21:01:28.224134 memdb.go:227: MemDB shipped.db: Fetched projects[27e68bf4-6ff6-11e6-805e-0242ac110008].serviceRepoIDs="486a92ac-6ff6-11e6-b350-0242ac110003"
+TRACE 2016/08/31 21:01:28.224162 client.go:114: GET https://api.ciscoshipped.io/projects/27e68bf4-6ff6-11e6-805e-0242ac110008/services/486a92ac-6ff6-11e6-b350-0242ac110003?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 21:01:28.548249 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 21:01:28.548469 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].name="shippedtest"
+TRACE 2016/08/31 21:01:28.548482 memdb.go:283: MemDB shipped.db: Updated services[486a92ac-6ff6-11e6-b350-0242ac110003].serviceID="486a92ac-6ff6-11e6-b350-0242ac110003"
+TRACE 2016/08/31 21:01:28.549572 command.go:23: Executing command: docker ps -a --format {{.ID}}@@{{.Names}}@@{{.Status}}
+TRACE 2016/08/31 21:01:28.649786 memdb.go:227: MemDB shipped.db: Fetched services[486a92ac-6ff6-11e6-b350-0242ac110003].portnum=30080
+2016/08/31 21:01:28.650073 bootstrap.go:217: ============================================================
+2016/08/31 21:01:28.650097 bootstrap.go:218: 1 service is running and is available at the web address below
+------------  ------------  --------------         ------        -------------------
+Service Name  Container ID  Container Name         Status        Service Web Address
+------------  ------------  --------------         ------        -------------------
+shippedtest   de048f79bb43  testing_shippedtest_1  Up 1 seconds  http://localhost:30080
+2016/08/31 21:01:28.650112 bootstrap.go:219: ============================================================
+2016/08/31 21:01:28.650451 bootstrap.go:207: Bootstrap is complete and Shipped has set up a CI build for each of your services.
+2016/08/31 21:01:28.650474 bootstrap.go:208: To initiate a build for a service, do a git commit and push for that service.
+TRACE 2016/08/31 21:01:28.651607 memdb.go:109: MemDB shipped.db: Decreased open count to 1
+TRACE 2016/08/31 21:01:28.651622 shipdb.go:117: Dropped open count of database shipped.db
+TRACE 2016/08/31 21:01:28.651652 client.go:114: GET https://api.ciscoshipped.io/projects/27e68bf4-6ff6-11e6-805e-0242ac110008?api_token=MqOoGemQdUJQVpOHXPNCzdacGmRtiRjj
+TRACE 2016/08/31 21:01:29.066021 client.go:159: Request status code 200 (200 OK)
+TRACE 2016/08/31 21:01:29.067717 config.go:139: Using config file /Users/zaguerinho/workspace/Testing/.shipped/shipped.ini
+TRACE 2016/08/31 21:01:29.068067 config.go:158: Also using home config file /Users/zaguerinho/.shipped/shipped.ini
+TRACE 2016/08/31 21:01:29.068087 projects.go:304: Changed to project 27e68bf4-6ff6-11e6-805e-0242ac110008 directory /Users/zaguerinho/workspace/Testing
+TRACE 2016/08/31 21:01:29.069167 memdb.go:106: MemDB shipped.db: Closed
+TRACE 2016/08/31 21:01:29.069186 shipdb.go:119: Closed database shipped.db
+TRACE 2016/08/31 21:01:29.069192 logfile.go:40: Stopped archiving log output to /Users/zaguerinho/workspace/shippedtest/shipped-cli.log

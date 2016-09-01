@@ -14,6 +14,6 @@
 </head>
 <body>
 	<img id="logo" src="logo_blue.png" alt="logo.png"/>
-	<h1><?php echo "Hello  Darkest my all friend!!"; ?></h1>
+	<h1><?php echo "Hello  Darkness my old friend!!"; ?></h1>
 </body>
 </html>
